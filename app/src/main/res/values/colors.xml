@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input_border">#C5C6CC</color>
+    <color name="primary">#5A9FD4</color>
+    <color name="text">#808080</color>
+    <color name="accent">#F95C3D</color>
+    <color name="header_input_bg">#EAF6FD</color>
+    <color name="card_bg">#F8F9FE</color>
+    <color name="badi">#ff0000</color>
+
+</resources>
