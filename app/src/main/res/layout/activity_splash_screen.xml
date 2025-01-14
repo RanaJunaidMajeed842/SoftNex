@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".splashScreenT">
 
     <ImageView
         android:id="@+id/logo"
@@ -21,7 +21,7 @@
         android:id="@+id/text_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="150dp"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -65,30 +65,21 @@
             android:textColor="@color/text"
             android:textSize="14sp" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:backgroundTint="@color/primary"
+            android:text="Login"
+            android:textColor="@color/white" />
 
-            <Button
-                android:id="@+id/login_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/primary"
-                android:text="Login"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/custom_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:text="Sign Up"
-                android:textColor="@color/white" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Sign Up"
+            android:textColor="@color/white" />
 
     </LinearLayout>
-
-
 </LinearLayout>

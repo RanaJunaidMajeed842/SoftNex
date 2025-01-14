@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -204,7 +205,7 @@
                             android:layout_height="100dp"
                             android:contentDescription="Card Image"
                             android:scaleType="centerInside"
-                            android:src="@drawable/card1" />
+                            android:src="@drawable/card_image_2" />
 
                         <TextView
                             android:id="@+id/name_card_7"
@@ -264,7 +265,7 @@
                             android:layout_height="100dp"
                             android:contentDescription="Card Image"
                             android:scaleType="centerInside"
-                            android:src="@drawable/card1" />
+                            android:src="@drawable/card_image_4" />
 
                         <TextView
                             android:id="@+id/name_card_8"
@@ -324,7 +325,7 @@
                             android:layout_height="100dp"
                             android:contentDescription="Card Image"
                             android:scaleType="centerInside"
-                            android:src="@drawable/card1" />
+                            android:src="@drawable/card_image_5" />
 
                         <TextView
                             android:id="@+id/name_card_9"
@@ -617,10 +618,10 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:paddingBottom="10dp"
         android:layout_gravity="bottom"
         android:background="@drawable/bottom_navigation"
-        android:elevation="4dp">
+        android:elevation="4dp"
+        android:paddingBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -647,10 +648,10 @@
                     android:id="@+id/nav_home_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Home"
-                    android:textSize="12sp"
                     android:textColor="@color/white"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -661,7 +662,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/nav_search"
+                    android:id="@+id/nav_jobs"
                     android:layout_width="wrap_content"
                     android:layout_height="43dp"
                     android:contentDescription="Jobs"
@@ -669,13 +670,13 @@
                     android:src="@drawable/briefcase" />
 
                 <TextView
-                    android:id="@+id/nav_search_text"
+                    android:id="@+id/nav_jobs_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Jobs"
-                    android:textSize="12sp"
                     android:textColor="@color/white"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -686,7 +687,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/nav_favorites"
+                    android:id="@+id/nav_chats"
                     android:layout_width="wrap_content"
                     android:layout_height="43dp"
                     android:contentDescription="Chat"
@@ -694,13 +695,13 @@
                     android:src="@drawable/message_text" />
 
                 <TextView
-                    android:id="@+id/nav_favorites_text"
+                    android:id="@+id/nav_chats_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Chat"
-                    android:textSize="12sp"
                     android:textColor="@color/white"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -722,10 +723,10 @@
                     android:id="@+id/nav_profile_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Profile"
-                    android:textSize="12sp"
                     android:textColor="@color/white"
-                    android:gravity="center" />
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -41,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Sign Up"
+            android:text="Login"
             android:paddingBottom="10dp"
             android:textColor="@color/primary"
             android:textSize="32sp" />
@@ -51,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="Please Sign Up here or enter your details to register"
+            android:text="Please log in here or enter your login details to continue"
             android:textColor="@color/text"
             android:textSize="12sp" />
     </LinearLayout>
@@ -68,46 +69,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:text="Name"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_border"
-            android:hint="Jhon Smith"
-            android:inputType="textEmailAddress"
-            android:padding="13dp"
-            android:textColorHint="@color/material_on_surface_disabled"
-            android:textSize="13sp" />
-
-        <!-- Password Field -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
-            android:text="Role"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/role"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_border"
-            android:hint="Software Engineer"
-            android:inputType="textEmailAddress"
-            android:padding="13dp"
-            android:textColorHint="@color/material_on_surface_disabled"
-            android:textSize="13sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
             android:text="Email"
             android:textColor="@color/black"
             android:textSize="14sp"
@@ -118,11 +79,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_border"
-            android:hint="someone@yourmail.com"
+            android:hint="Enter your email"
             android:inputType="textEmailAddress"
             android:padding="13dp"
             android:textColorHint="@color/material_on_surface_disabled"
             android:textSize="13sp" />
+
+        <!-- Password Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -134,25 +97,6 @@
 
         <EditText
             android:id="@+id/password_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_border"
-            android:hint="*********"
-            android:inputType="textPassword"
-            android:padding="13dp"
-            android:textColorHint="@color/material_on_surface_disabled"
-            android:textSize="13sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
-            android:text="Confirm Password"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/confirm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_border"
